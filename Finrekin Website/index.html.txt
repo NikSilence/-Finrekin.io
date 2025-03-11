@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FinRekin - Twoja księgowość we Wrocławiu</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="FinRekin Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#about">O firmie</a></li>
+                <li><a href="#services">Usługi</a></li>
+                <li><a href="#contact">Kontakt</a></li>
+                <li><a href="#map">Mapa</a></li>
+                <li>
+                    <select id="language-select">
+                        <option value="pl">Polski</option>
+                        <option value="ru">Русский</option>
+                        <option value="uk">Українська</option>
+                    </select>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h1>FinRekin – Twoja księgowość we Wrocławiu</h1>
+        <p>FinRekin to nowoczesne biuro rachunkowe z siedzibą we Wrocławiu, które oferuje kompleksowe usługi księgowe, kadrowo-płacowe oraz doradztwo finansowe dla firm i przedsiębiorców. Dzięki doświadczeniu i indywidualnemu podejściu pomagamy naszym klientom w prowadzeniu działalności zgodnie z obowiązującymi przepisami, optymalizując jednocześnie ich finanse.</p>
+    </section>
+
+    <section id="services">
+        <h2>Nasze usługi</h2>
+        <ul>
+            <li>Prowadzenie ksiąg rachunkowych i KPiR</li>
+            <li>Obsługa kadrowo-płacowa</li>
+            <li>Rozliczenia podatkowe (VAT, PIT, CIT)</li>
+            <li>Rejestracja działalności gospodarczej</li>
+            <li>Doradztwo finansowe i optymalizacja podatkowa</li>
+        </ul>
+    </section>
+
+    <section id="contact">
+        <h2>Kontakt</h2>
+        <p>📍 Siedziba: Wrocław, Parkowa 25/68</p>
+        <p>📞 Kontakt: 608 771 993</p>
+        <p>Godziny pracy: 10:00 - 17:00 (poniedziałek - piątek)</p>
+    </section>
+
+    <section id="map">
+        <h2>Gdzie nas znaleźć</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2504.123456789012!2d17.12345678901234!3d51.12345678901234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTHCsDA3JzI0LjQiTiAxN8KwMDcnMjQuNCJF!5e0!3m2!1spl!2spl!4v1234567890123!5m2!1spl!2spl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 FinRekin. Wszystkie prawa zastrzeżone.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

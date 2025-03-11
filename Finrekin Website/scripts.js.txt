@@ -1,0 +1,41 @@
+document.getElementById('language-select').addEventListener('change', function() {
+    const lang = this.value;
+    const translations = {
+        pl: {
+            about: "O firmie",
+            services: "Usługi",
+            contact: "Kontakt",
+            map: "Mapa",
+            description: "FinRekin to nowoczesne biuro rachunkowe z siedzibą we Wrocławiu, które oferuje kompleksowe usługi księgowe, kadrowo-płacowe oraz doradztwo finansowe dla firm i przedsiębiorców.",
+            servicesList: ["Prowadzenie ksiąg rachunkowych i KPiR", "Obsługa kadrowo-płacowa", "Rozliczenia podatkowe (VAT, PIT, CIT)", "Rejestracja działalności gospodarczej", "Doradztwo finansowe i optymalizacja podatkowa"],
+            contactInfo: ["📍 Siedziba: Wrocław, Parkowa 25/68", "📞 Kontakt: 608 771 993", "Godziny pracy: 10:00 - 17:00 (poniedziałek - piątek)"]
+        },
+        ru: {
+            about: "О компании",
+            services: "Услуги",
+            contact: "Контакты",
+            map: "Карта",
+            description: "FinRekin - это современное бухгалтерское бюро во Вроцлаве, предлагающее комплексные бухгалтерские, кадровые и финансовые консультации для компаний и предпринимателей.",
+            servicesList: ["Ведение бухгалтерских книг и KPiR", "Кадровое и зарплатное обслуживание", "Налоговые расчеты (НДС, PIT, CIT)", "Регистрация хозяйственной деятельности", "Финансовое консультирование и налоговое планирование"],
+            contactInfo: ["📍 Адрес: Вроцлав, Parkowa 25/68", "📞 Контакт: 608 771 993", "Часы работы: 10:00 - 17:00 (понедельник - пятница)"]
+        },
+        uk: {
+            about: "Про компанію",
+            services: "Послуги",
+            contact: "Контакти",
+            map: "Карта",
+            description: "FinRekin - це сучасне бухгалтерське бюро у Вроцлаві, яке пропонує комплексні бухгалтерські, кадрові та фінансові консультації для компаній та підприємців.",
+            servicesList: ["Ведення бухгалтерських книг і KPiR", "Кадрове та зарплатне обслуговування", "Податкові розрахунки (ПДВ, PIT, CIT)", "Реєстрація господарської діяльності", "Фінансове консультування та податкове планування"],
+            contactInfo: ["📍 Адреса: Вроцлав, Parkowa 25/68", "📞 Контакт: 608 771 993", "Години роботи: 10:00 - 17:00 (понеділок - п'ятниця)"]
+        }
+    };
+
+    const data = translations[lang];
+    document.querySelector('#about h1').textContent = "FinRekin – " + (lang === 'pl' ? "Twoja księgowość we Wrocławiu" : lang === 'ru' ? "Ваш бухгалтерский учет во Вроцлаве" : "Ваш бухгалтерський облік у Вроцлаві");
+    document.querySelector('#about p').textContent = data.description;
+    document.querySelector('#services h2').textContent = data.services;
+    document.querySelector('#services ul').innerHTML = data.servicesList.map(service => `<li>${service}</li>`).join('');
+    document.querySelector('#contact h2').textContent = data.contact;
+    document.querySelector('#contact p').innerHTML = data.contactInfo.join('<br>');
+    document.querySelector('#map h2').textContent = data.map;
+});
